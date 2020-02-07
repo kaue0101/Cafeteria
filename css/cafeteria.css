@@ -1,0 +1,38 @@
+* {
+  margin: 0; /*zerar a margem externa dos elementos*/
+  padding: 0; /*zerar a margem interna dos elementos*/
+}
+header` {
+  /*adiconar um imagem de fundo ao  cabe calho*/
+  background-image: url ("../img/cafeteria2.jpg");
+  background-position: 0px -300px;
+  height: 300px;
+  transition: ease 1s;
+}
+h1`{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "abel";
+    font-size:40pt;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px rbg(0, 0, 0):
+}
+nav ul li {
+    display:inline-block;
+    border: 1px solid red  ;
+margin-left: 10px;
+margin-right: 10px;
+}
+/*alinhar os alementos de like ao centro usando
+texto-alig:centr na nav,assim tudo que estiver
+dentro do nav ira para o centro */
+nav {
+    text-align: center;
+    margin-top: 100px;
+    /*a cor utilzada para o fudo da nav foi rgba,que
+    siginihica read gree blue e alpha(transparente),onde o valor mais proximo do  0(0) e totalmente transparente e
+    quando mais proximo do 1 e totalmente solido.neste caso estamos usando 80% de solidez,ou seja,aplicamos 20% de transparencia */ 
+    background-color: rgba(233, 233, 233, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -56,4 +56,109 @@ div ul li {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 30px;
+}
+div a {
+  color: rgb(100, 0, 0);
+  text-decoration: none;
+}
+
+main {
+  /** Vamos aplicar um margem interna de 20px Ultilizaremos o comando paddi */
+
+  padding: 20p;
+}
+h2 {
+  font-family: abel;
+  color: rgb(100, 0, 0);
+  font-size: 20px;
+  border-bottom: 4px dotted rgb(100, 0, 0);
+  margin-left: 15px;
+  padding-left: 600px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-family: anton;
+  margin-left: 70px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+p {
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: justify;
+
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-family: abel;
+  font-size: 13px;
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+  /* vamos aplicarr um efeiro de transparencia
+com o comando opacity.onde os valores 1
+e totalmente visivel e 0 e o totalmente 
+transparente */
+  opacity: 1;
+  border-radius: 50%;
+  transition: ease 0.5s;
+}
+
+#home img:hover {
+  opacity: 1;
+  transform: scale(2);
+  cursor: pointer;
+  transform: rotateY(360deg);
+}
+
+#acafeteria {
+  text-align: center;
+}
+#acafeteria img {
+  width: 500px;
+  height: 400px;
+}
+#video {
+  text-align: center;
+}
+
+/*abaixo a formação para pagina cardapio*/
+#container,
+#linha,
+#imagem,
+#texto {
+  border: 1px solid red;
+}
+
+#conterner {
+  display: inline-block;
+}
+
+#linha {
+  display: inline-block;
+  width: 80%;
+}
+#imagem img {
+  width: 200px;
+  height: 200px;
+}
+#imagem {
+  width: 200px;
+  height: 200px;
+  /**fazer a imagem flutuar para a esquerda*/
+  float: left;
+}
+#texto {
+  padding: 20px;
+  width: 80%;
+  float: left;
 }

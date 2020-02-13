@@ -1,86 +1,103 @@
 * {
-  margin: 0; /*zerar a margem externa dos elementos*/
-  padding: 0; /*zerar a margem interna dos elementos*/
+  margin: 0; /* zerar a margem externa dos elementos*/
+  padding: 0; /* zerar a margem interna dos elementos*/
 }
 header {
-  /*adiconar um imagem de fundo ao  cabe calho*/
+  /* Vamos adicionar uma imagem de fundo ao cabeçalho */
   background-image: url("../img/cafeteria2.jpg");
-  background-position: 0px -300px;
   height: 300px;
-  transition: ease 1s;
+  background-position: 0px -100px;
+  height: 300px;
+  transition: ease 5s;
 }
+
 h1 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-family: "abel";
-  font-size: 40pt;
-  padding-top: 100px;
-  text-shadow: 5px 5px 10px rbg(0, 0, 0);
+  color: rgb(179, 18, 18);
+  text-align: center; /* alinhamento do titulo cafeteria cafe torrado */
+  font-family: "Anton"; /* familia fonte */
+  font-size: 40pt; /* tamanho da fonte do titulo*/
+  padding-top: 90px;
+  text-shadow: 5px 5px 10px rgb(140, 120, 83);
 }
+
+/* Vamos formatar os elementos de li para ficar um ao lado do outro com o comando display */
 nav ul li {
+  /* dispor os links um ao lado do outro */
   display: inline-block;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 10px; /* aumentar distancia das margens é no li */
 }
-/*alinhar os alementos de like ao centro usando
-texto-alig:centr na nav,assim tudo que estiver
-dentro do nav ira para o centro */
+/* Alinhar os elementos de link ao centro usando text-align: center no nav, assim tudo que estiver centro do nav irá para o centro */
 nav {
-  text-align: center;
-  margin-top: 100px;
-  /*a cor utilzada para o fudo da nav foi rgba,que
-    siginihica read gree blue e alpha(transparente),onde o valor mais proximo do  0(0) e totalmente transparente e
-    quando mais proximo do 1 e totalmente solido.neste caso estamos usando 80% de solidez,ou seja,aplicamos 20% de transparencia */
-  background-color: rgba(233, 233, 233, 0.8);
+  text-align: center; /*  area transparente topo do site index*/
+  margin-top: 91px;
+  /* A cor utilizada para o fundo da nav foi o rgba, que significa red, green, blue e alpha( transparência), 
+  onde o valor mais próximo do 0(zero) é totalmente transparente e quando mais próximo do 1 é totalmente solido. 
+  neste caso estamos usando 80% de solidez, ou seja, aplicamos 20% de transparência) */
+  background-color: rgba(255, 255, 255, 0.8);
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 nav ul li a {
-  color: rbg(100, 0, 0);
+  color: rgb(100, 0, 0);
+  /* para retirar o sublinhado (underline) dos links 
+  utilizaremos o comando text-decoration com o valor none (nenhum)*/
   text-decoration: none;
-  font-family: swap;
+  font-family: "Anton";
   font-weight: bold;
 }
-nav ul a:hover {
+
+nav ul li a:hover {
   text-decoration: underline;
 }
+/*color: rgb(0, 200, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(0, 0, 0);*/
 
+/*  Criação da formatação do rodapé (footer) */
 footer {
   background-color: sandybrown;
   text-align: center;
+  color: rgb(200, 0, 0);
+  font-family: "Anton";
+  padding-top: 20px;
+  font-weight: bold;
+}
+div ul li {
+  /* () <div id= "nome do link HTML"</div> ) permite criar uma tag de  identificação especifica para aplicar regras css individuais -->*/
+  /* Altera os links redes sociais para o centro */
+  display: inline-block;
 }
 
-div ul li {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 30px;
-}
 div a {
   color: rgb(100, 0, 0);
   text-decoration: none;
 }
 
 main {
-  /** Vamos aplicar um margem interna de 20px Ultilizaremos o comando paddi */
+  /* vamos aplicar uma margem interna de 20px
+utilizaremos o comando padding*/
 
-  padding: 20p;
+  padding: 20px;
 }
+
 h2 {
-  font-family: abel;
+  /* conteudo sobre o titulo: Seja Bem-Vindo a Cafeteria PILÃO  e linha dupla index*/
+  font-family: Anton;
   color: rgb(100, 0, 0);
-  font-size: 20px;
-  border-bottom: 4px dotted rgb(100, 0, 0);
-  margin-left: 15px;
-  padding-left: 600px;
+  font-size: 20pt;
+  border-bottom: 4px double rgb(100, 0, 0);
+  margin-left: 15px; /* alinha a margem da linha dupla individualmente*/
+  padding-left: 600px; /*  alinha o texto interno individualmente*/
   margin-bottom: 30px;
 }
+
 h3 {
-  font-family: anton;
+  font-family: Anton;
   margin-left: 70px;
-  font-size: 15px;
+  font-size: 15pt;
   margin-bottom: 30px;
   letter-spacing: 3px;
 }
@@ -90,34 +107,48 @@ p {
   padding-right: 70px;
   text-align: justify;
 
+  /*aplicaremos um comando que aumenta a altura da linha. esse efeito simula o espaçamento entre linhas encontrando o word.
+  comando é line-height -> linha height*/
+
   line-height: 30px;
   margin-bottom: 30px;
-  font-family: abel;
-  font-size: 13px;
+  font-family: Anton;
+  font-size: 13pt;
 }
-
 #home {
-  text-align: center;
+  /* Home area da foto */
+  /* Aplica cor na area em volta da foto*/
+  /*background-color: red;*/
+  text-align: center; /* alinha a foto da home no centro. */
 }
 
 #home img {
+  /* tamanho altura das imagens home cafe 5 e cafe 7 imagens ficou uma do lado da outra com espaço de 10px*/
   height: 400px;
   width: 400px;
   margin: 10px;
-  /* vamos aplicarr um efeiro de transparencia
-com o comando opacity.onde os valores 1
-e totalmente visivel e 0 e o totalmente 
-transparente */
-  opacity: 1;
-  border-radius: 50%;
-  transition: ease 0.5s;
+
+  /* Vamos aplicar um efeito de transparência 
+  com o comando opacity. Onde os valores 1 é totalmente visível e 0 é totalmente transparente */
+  opacity: 0.5; /* deixa a imagem cafe 5 e 7 transparente*/
+  border-radius: 10%; /* altera a borda da foto 5 e 7 arredondado*/
+
+  transition: ease 2s; /* aplica efeito ao passar o mouse em cima das fotos 5 e 7*/
 }
 
 #home img:hover {
+  /* aplica efeito para ampliar as fotos 5 e 7 e o cursor do mouse altera para mãozinha*/
   opacity: 1;
-  transform: scale(2);
+  transform: scale(1.2);
   cursor: pointer;
-  transform: rotateY(360deg);
+  transform: rotate(
+    360deg
+  ); /* efeito deixa a imagem 5 e 7 girando em 360 graus ao passar o mouse em cima*/
+
+  /*transform: rotateX(
+    360deg
+  ); /* efeito rotateX ou rotateY diferente de rotação em 360 deixa a imagem 5 e 7 girando em angulo X ou Y/
+  */
 }
 
 #acafeteria {
@@ -127,36 +158,47 @@ transparente */
   width: 500px;
   height: 400px;
 }
+
 #video {
   text-align: center;
 }
 
-/*abaixo a formação para pagina cardapio*/
+/* Abaixo a formatação para a página cardápio */
 #container,
 #linha,
 #imagem,
 #texto {
-  border: 1px solid red;
+  /* border: 1px solid red;*/
 }
 
-#conterner {
+#container {
   display: inline-block;
+  border-bottom: 1px solid silver; /* aplicado na margem de lanhes, salgados e doces  com linha*/
+  margin-bottom: 50px; /*aplicado na margem de lanhes, salgados e doces  com linha*/
+  padding-bottom: 50px; /* adiciona espaço na linhas */
+  box-shadow: 0px 5px 10px silver;
 }
 
 #linha {
-  display: inline-block;
-  width: 80%;
+  /* alinha o texto de cafe mega especial */
+  display: table;
+  width: 80;
+  margin-left: auto;
+  margin-right: auto;
 }
 #imagem img {
+  /*ajusta imagem cafe Mega especial*/
   width: 200px;
   height: 200px;
 }
 #imagem {
   width: 200px;
   height: 200px;
-  /**fazer a imagem flutuar para a esquerda*/
+
+  /* Fazer a imagem flutuar para a esquerda*/
   float: left;
 }
+
 #texto {
   padding: 20px;
   width: 80%;
